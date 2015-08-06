@@ -113,6 +113,10 @@ body {
  * Cover
  */
 
+.section{
+  height:100%;
+}
+
 .cover {
   padding: 0 20px;
   position: relative;

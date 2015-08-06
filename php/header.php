@@ -5,7 +5,7 @@
                 <ul class="nav masthead-nav">
                   <li class="active"><a href="#">Home</a></li>
                   <li><a href="#">Was wir anbieten</a></li>
-                  <li><a href="#">Kontakt</a></li>
+                  <li><div class="contact">Kontakt</div></li>
                 </ul>
               </nav>
             </div>

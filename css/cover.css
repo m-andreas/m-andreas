@@ -56,6 +56,7 @@ body {
 
 /* Padding for spacing */
 .inner {
+  height:100px;
   padding: 20px;
   text-align: center;
   margin: 10px auto;
@@ -221,6 +222,20 @@ body {
 
   .two_lines{
     top: 70px;
+  }
+
+  .image{
+    float:right;
+    width:600px;
+    margin-right: 100px;
+    padding:50px;
+  }
+
+  .text{
+    float:left;
+    margin-left: 100px;
+    text-align: left;
+
   }
 
   .lower{

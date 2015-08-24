@@ -27,7 +27,8 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #CED3E4;
+  background-image: url("../img/bg.png");
+  background-repeat:repeat;
 }
 body {
   color: #0d336e;  

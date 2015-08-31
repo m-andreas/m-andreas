@@ -35,7 +35,7 @@ body {
   color: #0d336e;  
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 
@@ -449,9 +449,10 @@ aside {
 
 }
 
-@media (min-width: 1470px) and (min-height: 750px) {
+@media (min-width: 1500px) and (min-height: 750px) {
   .main-tech{
     font-size: 16px;
+    line-height: 1.2em;
   }
   .wrapped-line{
     font-size: 16px;
@@ -524,7 +525,7 @@ aside {
   .text{
       margin-left: 100px;
       left:16%;
-      width: 70%;
+      width: 100%;
       line-height: 2em;
       top:0;
   }

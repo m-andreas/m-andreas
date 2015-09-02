@@ -16,7 +16,7 @@
     <meta name="page-topic" content="Webanwendungen">
     <meta name="revisit-after" CONTENT="7 days">
     <link rel="icon" href="favicon.ico">
-
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
     <title>web.wien Ihr Parter für Webanwendungen</title>
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -94,7 +94,7 @@
                         <div class="outer-centerer">
                           <div class="inner-centerer" style="display: table-cell; vertical-align: middle;">
                             <div class="small_text">Was wir bieten</div>     
-                            <div class="big_text">Unsere Kernkompetenzen sind webbasierte Anwendungen und die Erstellung von Web-Auftritten. Wir planen, erstellen und warten ihre Software.<br><br><span class="click">Klick für mehr...</span></div>
+                            <div class="big_text smaller">Unsere Kernkompetenzen sind webbasierte Anwendungen und die Erstellung von Web-Auftritten. Wir planen, erstellen und warten ihre Software.<br><br><span class="click">Klick für mehr...</span></div>
                           </div>
                         </div>
                       </div>
@@ -118,7 +118,7 @@
                         <div class="outer-centerer">
                           <div class="inner-centerer" style="display: table-cell; vertical-align: middle;">
                             <div class="small_text">Sind meine Daten<br> dann online?</div>     
-                            <div class="big_text">Nicht notgedrungen. Viele Unternehmen wollen die Vorteile webbasierter Systeme auschließlich intern verwenden. Eine Anbindung an das World Wide Web ist nicht notwendig!<br><br><span class="click">Klick für mehr...</span></div>
+                            <div class="big_text smaller">Nicht notgedrungen. Viele Unternehmen wollen die Vorteile webbasierter Systeme auschließlich intern verwenden. Eine Anbindung an das World Wide Web ist nicht notwendig!<br><br><span class="click">Klick für mehr...</span></div>
                           </div>
                         </div>
                       </div>              
@@ -126,7 +126,7 @@
                         <img class="img-zoom" src="img/blue.png" alt="logo">
                         <div class="outer-centerer">
                           <div class="inner-centerer" style="display: table-cell; vertical-align: middle;">
-                            <div class="small_text">Erstellt Ihr Homepages?</div>     
+                            <div class="small_text">Erstellt Ihr<br>Homepages?</div>     
                             <div class="big_text">Unter anderem! Wir erstellen Ihre Webseite, kümmern uns um die Wartung und übernehmen alle administrativen Tätigkeiten.<br><br><span class="click">Klick für mehr...</span></div>
                           </div>
                         </div>
@@ -145,7 +145,7 @@
                         <div class="outer-centerer">
                           <div class="inner-centerer" style="display: table-cell; vertical-align: middle;">
                             <div class="small_text">Was kostet so etwas?</div>     
-                            <div class="big_text">Das ist ohne genaue Spezifikation schwierig zu sagen. Jedoch starten die Preise bei schnell umzusetzenden Anforderungen für Webseiten bei 700€, für Webasierte Software bei 2000€.</div>
+                            <div class="big_text smaller">Das ist ohne genaue Spezifikation schwierig zu sagen. Jedoch starten die Preise bei schnell umzusetzenden Anforderungen für Webseiten bei 700€, für Webasierte Software bei 2000€.</div>
                           </div>
                         </div>
                       </div>
@@ -154,7 +154,7 @@
                         <div class="outer-centerer">
                           <div class="inner-centerer" style="display: table-cell; vertical-align: middle;">
                             <div class="small_text">Braucht man Flash?</div>     
-                            <div class="big_text">Nein, ganz im Gegenteil. Flash oder andere Plugins sollte unbedingt vermieden werden. Sie werdern nur von spezifischen Plattformen unterstützt und das würde allem widersprechen was unsere Software auszeichnet.<br><span class="click">Klick für mehr...</span></div>
+                            <div class="big_text smaller">Nein, ganz im Gegenteil. Flash oder andere Plugins sollte unbedingt vermieden werden. Sie werdern nur von spezifischen Plattformen unterstützt und das würde allem widersprechen was unsere Software auszeichnet.<br><span class="click">Klick für mehr...</span></div>
                           </div>
                         </div>
                       </div>   
@@ -167,7 +167,7 @@
                         <div class="outer-centerer">
                           <div class="inner-centerer" style="display: table-cell; vertical-align: middle;">
                             <div class="small_text">Kontakt</div>     
-                            <div class="big_text">Sie haben Fragen zu Produkten, Preisen, oder wollen einen Termin vereinbaren?<br>Wir freuen uns über ihre Anfragen an <a href="mailto:anfrage@web.wien">anfrage@web.wien</a><br><br><span class="click">Klick für mehr...</span></div>
+                            <div class="big_text smaller">Sie haben Fragen zu Produkten, Preisen, oder wollen einen Termin vereinbaren?<br>Wir freuen uns über ihre Anfragen an <a href="mailto:anfrage@web.wien">anfrage@web.wien</a><br><br><span class="click">Klick für mehr...</span></div>
                           </div>
                         </div>
                       </div>
@@ -339,7 +339,7 @@
                     <h1>Sicherheit<img class="readmore" src="img/readmore.png" alt="readmore"></h1>
                   </div>
                   <div class="main-safety">
-                    <div class="image">
+                    <div class="small-image image">
                       <img src="img/security.jpg" alt="logo">
                     </div>
 
@@ -361,7 +361,7 @@
                     <h1>Homepages<img class="readmore" src="img/readmore.png" alt="readmore"></h1>
                   </div>
                   <div class="main-hp">
-                    <div class="image">
+                    <div class="small-image image">
                       <img src="img/webdesign.jpg" alt="logo">
                     </div>
 
@@ -431,6 +431,7 @@
               paddingBottom:'150px',
               responsiveWidth:800,
               responsiveHeight:750,
+              scrollingSpeed: 1200,
               afterResize: function(){
                 console.log("fired");
                 $.fn.fullpage.reBuild();
@@ -475,11 +476,12 @@
           }
 
           function zoomIn(_this){
+                $(_this).find("div.big_text").stop().hide()
                 $(_this).children("img").addClass('transition');
                 console.log($(_this).children("img"))
                 $(_this).children("img").zIndex("120")
                 _this.style.zIndex='100';
-                window.setTimeout(showText($(_this).find("div.big_text")),300)
+                window.setTimeout(showText($(_this).find("div.big_text")),800)
                 $(_this).find("div.small_text").hide()
           }
 

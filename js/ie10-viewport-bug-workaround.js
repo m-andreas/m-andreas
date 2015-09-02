@@ -50,7 +50,7 @@
                     top:e.pageY + pos_y - drg_h,
                     left:e.pageX + pos_x - drg_w
                 }).on("mouseup", function() {
-                    $(this).removeClass('draggable').css('z-index', z_idx);
+                    $(this).removeClass('draggable').css('z-index', 100);
                 });
             });
             e.preventDefault(); // disable selection

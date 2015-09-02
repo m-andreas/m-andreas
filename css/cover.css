@@ -461,10 +461,18 @@ aside {
       z-index: 100;
       position: relative;
       left:-30px;
-      top:-80px;
+      top:-40px;
       width: 170px;
       line-height: 1.5em;
       text-align: center;
+  }
+
+  .smaller{  
+    top:-80px;
+  }
+
+  .medium{
+    top:-60px;
   }
 
   .outer-centerer{
@@ -522,6 +530,7 @@ aside {
     font-size: 18px;
     line-height: 1.2em;
   }
+  
   .wrapped-line{
     font-size: 20px;
     width:100%;
@@ -594,6 +603,15 @@ aside {
       text-align: center;
   }
 
+  .smaller{
+    line-height: 1.5em;
+    top:0px;
+  }
+
+  .medium{
+    top:0;
+  }
+
   .text{
       line-height: 2em;
   }
@@ -607,12 +625,6 @@ aside {
   .mastfoot{
     visibility: hidden;
   } 
-}
-
-150px;
-
-.smaller{
-  line-height: 1.5em;
 }
 
 @media (max-width: 431px){

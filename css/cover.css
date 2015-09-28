@@ -2,6 +2,11 @@
  * Globals
  */
 
+@font-face { 
+font-family: 'Josefin Sans'; 
+src: url("../fonts/JosefinSans-Regular.ttf"); 
+}
+
 /* Links */
 a,
 a:focus,
@@ -36,6 +41,10 @@ body {
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   font-size: 16px;
+}
+
+.contact, .basics, .possibilitys, .technology, .safety, .impressum, .offer{
+  cursor: pointer;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -132,7 +141,7 @@ aside {
   #resizable h3 { text-align: center; margin: 0; }
 
   #easing-button { padding: .5em 1em; text-decoration: none; }
-  #effect { width: 240px; height: 250px; padding: 0.4em; position: relative; background: #fff; top: 20px;}
+  #effect { width: 240px; height: 230px; padding: 0.4em; position: relative; background: #fff; top: 20px;}
   #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
 
   .editor{
@@ -219,6 +228,9 @@ aside {
     position: fixed;
     bottom: 0;
   }
+  .inner{
+    margin-top: 0px;
+  }
 
   /* Handle the widths */
   .masthead,
@@ -240,9 +252,16 @@ aside {
 
 
 @media (max-width: 1000px), (max-height: 750px ) {
+    .text{
+      position: relative; 
+      left:3%;
+      float:left;
+      text-align: left;
+      width: 96%;
+    }
 
     .masthead{
-      height:160px;
+      height:120px;
     }
 
     .section{
@@ -251,13 +270,13 @@ aside {
 
     .home{
       position:   absolute; 
-      top:  45px;
+      top:  35px;
       right: 20px;
     }
 
-    .contact{
+    .contact-button{
       position:   absolute; 
-      top:  45px;
+      top:  40px;
       right: 80px;
     }
 
@@ -279,13 +298,12 @@ aside {
     }
 
     .smallmenu > nav > ul > li{
-      float:left;
       margin: 20px;
       padding-bottom:20px;
       padding-top: 20px;
       background-color: #ffb83c;
       width:200px;
-      display: block;     
+      display: inline-block;     
       border-radius:5px;
       border: 2px solid #0d336e;
       -webkit-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.3), inset 0 0 10px rgba(0,0,0,.5);
@@ -336,7 +354,7 @@ aside {
   }
 
   .inner{
-    margin-top: 0;
+    margin-top: 20px;
   }
 
   .masthead-brand{
@@ -348,18 +366,44 @@ aside {
 
 }
 
-@media (max-width: 743px){
+@media (max-width: 900px){
+    .masthead{
+      height:170px;
+    }
 
+    .section{
+      height: auto !important;
+      padding-top: 180px !important;
+      padding-bottom: 0 !important;
+    }
+    .inner{
+      margin-top: 0px;
+    }
+
+    .slogan {
+      padding-top: 0px;
+    }
+}
+
+@media (max-width: 766px){
+    .section{
+      height: auto !important;
+      padding-top: 20px !important;
+      padding-bottom: 0 !important;
+    }
+}
+
+@media (max-width: 743px){
     .masthead{
       height:210px;
     }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 1050px) {
   .home{
     visibility: hidden;
   }
-  .contact{
+  .contact-button{
     visibility: hidden;
   }
 }
@@ -457,14 +501,14 @@ aside {
   }
 
   .big_text{
-      display: none;
-      z-index: 100;
-      position: relative;
-      left:-30px;
-      top:-40px;
-      width: 170px;
-      line-height: 1.5em;
-      text-align: center;
+    display: none;
+    z-index: 100;
+    position: relative;
+    left:-30px;
+    top:-40px;
+    width: 170px;
+    line-height: 1.5em;
+    text-align: center;
   }
 
   .smaller{  
@@ -472,7 +516,7 @@ aside {
   }
 
   .medium{
-    top:-60px;
+    top:-65px;
   }
 
   .outer-centerer{
@@ -516,12 +560,12 @@ aside {
   }
 
   .main-tech{
-    font-size: 16px;
+    font-size: 15px;
   }
 
 }
 
-@media (min-width: 1500px) and (min-height: 750px) {
+@media (min-width: 1500px) and (min-height: 850px) {
   body{
     font-size: 18px;
   }
@@ -584,23 +628,23 @@ aside {
   }  
 
   .small_text{
-      z-index: 1;
-      position: relative;
-      left:0;
-      width: 100%;
-      line-height: 2em;
-      text-align: center;
+    z-index: 1;
+    position: relative;
+    left:0;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
   }  
 
   .big_text{
-      display: none;
-      z-index: 100;
-      position: relative;
-      left:16%;
-      width: 70%;
-      top:0;
-      line-height: 2em;
-      text-align: center;
+    display: none;
+    z-index: 100;
+    position: relative;
+    left:16%;
+    width: 70%;
+    top:0;
+    line-height: 2em;
+    text-align: center;
   }
 
   .smaller{
@@ -609,11 +653,11 @@ aside {
   }
 
   .medium{
-    top:0;
+    top:-5px;
   }
 
   .text{
-      line-height: 2em;
+    line-height: 2em;
   }
 
   .placeholder{
@@ -628,7 +672,7 @@ aside {
 }
 
 @media (max-width: 431px){
-    .masthead{
-      height:260px;
-    }
+  .masthead{
+    height:260px;
+  }
 }
